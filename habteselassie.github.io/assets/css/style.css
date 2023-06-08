@@ -669,7 +669,10 @@ small {
   }
 }
 
-
+.nav-menu {
+  width: 100%;
+  padding-left: 0;
+}
   .navbar-nav.flex-column {
     padding-top: 20px;
   }
