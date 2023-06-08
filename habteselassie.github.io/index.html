@@ -178,12 +178,17 @@
     </ul>
   </nav>--> 
 
+ 
+  
+  
 
-
-  <div class="container">
+  <div class="container fluid">
     <div class="row">
       <div class="col-md-3">
-        <div class="card" style="position: fixed; top: 0; left: 0; bottom: 0;">
+        <a href="#" class="card-link">
+        <div class="card" 
+        class="list-group" id="sidebar"
+        style="position: fixed; top: 0; left: 0; bottom: 0;">
           <div class="card-body">
             <!-- Your navigation menu code here -->
             <div class="card" style="width: 15rem;">
@@ -233,37 +238,60 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a aria-label="Navigate to the Contact section" href="#contact" class="nav-link waves-effect waves-dark teal-text">
+                    <a class="nav-link"
+                    aria-label="Navigate to the Contact section" href="#contact" class="nav-link waves-effect waves-dark teal-text">
                       <i class="mdi-content-mail small"></i>
                       <span>Contact</span>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a aria-label="Open Habte Selassie's resume in a new tab" href="https://varadbhogayata.github.io/assets/resume/Varad_Bhogayata_Resume.pdf" target="_blank" class="nav-link waves-effect waves-dark teal-text">
+                    <a class="nav-link" aria-label="Open Habte Selassie's resume in a new tab" href="https://varadbhogayata.github.io/assets/resume/Varad_Bhogayata_Resume.pdf" target="_blank" class="nav-link waves-effect waves-dark teal-text">
                       <i class="mdi-file-folder-open small"></i>
                       <span>Resume</span>
                     </a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-label="Open Habte Selassie's resume in a new tab" href="https://varadbhogayata.github.io/assets/resume/Varad_Bhogayata_Resume.pdf" target="_blank" class="nav-link waves-effect waves-dark teal-text">
+                      <i class="mdi-file-folder-open small"></i>
+                      <span>Resume</span>
+                    </a>
+                  </li>
+                 
                 </ul>
-            
-              <ul class="nav flex-column">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled">Disabled</a>
-                </li>
-              </ul>
+                <div class="navbar">
+                  <ul class="nav flex-column">
+                   
+                  </ul>
+                </div>
+                
+                <div class="content">
+                  <!-- Your page content here -->
+                </div>
+                
+                <script>
+                  const navbar = document.querySelector('.navbar');
+                  const navLinks = document.querySelectorAll('.nav-link');
+                
+                  navbar.addEventListener('click', function() {
+                    navbar.classList.toggle('active');
+                  });
+                
+                  navLinks.forEach(function(link) {
+                    link.addEventListener('click', function() {
+                      navLinks.forEach(function(item) {
+                        item.classList.remove('active');
+                      });
+                      this.classList.add('active');
+                    });
+                  });
+                </script>
+                
+             
               </div>
             </div>
           </div>
         </div>
+      </a>
       </div>
       <div class="col-md-9 offset-md-3" style="padding-left: 15px;">
         <!-- Your content sections here -->
