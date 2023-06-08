@@ -319,6 +319,7 @@ h3 {
 
 #intro.section .teal {
   padding: 0 10px;
+ 
 }
 
 .overlay {
@@ -516,6 +517,7 @@ small {
 
 .teal-text {
   color: #008073 !important;
+ 
 }
 
 /* .teal-text {
@@ -526,6 +528,7 @@ small {
 
 .teal {
   background-color: #008073 !important;
+  
 }
 
 /* .teal {
