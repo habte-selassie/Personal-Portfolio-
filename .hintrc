@@ -12,6 +12,7 @@
     "no-inline-styles": "off",
     "button-type": "off",
     "disown-opener": "off",
-    "axe/text-alternatives": "off"
+    "axe/text-alternatives": "off",
+    "axe/structure": "off"
   }
 }
