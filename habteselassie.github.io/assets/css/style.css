@@ -249,10 +249,12 @@ ul.side-nav.fixed li.logo a {
 ul.table-of-contents li:not(.logo) a.active, ul.table-of-contents li:not(.logo) a:hover {
   background-color: #fafafa;
   border-left: 3px solid;
+  
 }
 
 ul.side-nav.fixed.table-of-contents li:not(.logo) a span, ul#slide-out li:not(.logo) a span {
   color: #333 !important;
+
 }
 
 li.logo span {
@@ -363,7 +365,7 @@ h3 {
 .card li a {
   margin-right: 0;
   color: #333;
-  border-bottom: 2px solid #ffab40;
+  border-bottom: 2px solid #5eaa77;
 }
 
 .card li a:hover {
@@ -653,7 +655,7 @@ small {
   #experience span.card-title a {
     margin: 0;
   }
-  i.mdi-navigation-close.right {
+  i.mdi-igation-close.right {
     position: relative;
     bottom: 15px;
   }
@@ -675,8 +677,14 @@ small {
 
 
 
+.nav-link {
+  color: black;
+}
 
-
+/* Link color when clicked */
+.nav-link.active {
+  color: gray;
+}
 
 
 
