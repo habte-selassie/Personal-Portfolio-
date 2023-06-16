@@ -821,5 +821,9 @@ small {
   color: gray;
 }
 
-
-
+/* ul {
+  padding-left: 20px;
+  list-style: disc;
+  list-style-position: inside;
+  margin-top: 10px;
+} */
